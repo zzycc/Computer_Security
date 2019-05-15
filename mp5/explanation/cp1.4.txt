@@ -1,0 +1,3 @@
+Use command 'sudo grep -i "suicide" -r *'
+Then we can find the suicide file.
+Then use command 'shasum --algorithm 256 suicidenot.doc' to get sha256 value.

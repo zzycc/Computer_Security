@@ -1,0 +1,2 @@
+Use command 'cat etc/timezone'.
+Then we can see the content "America/Chicago", which uses CST.

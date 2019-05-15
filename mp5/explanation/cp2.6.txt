@@ -1,0 +1,5 @@
+Enter the .bash_history file then we find the tools command they use.
+Then we go to the syslog file and find the ip address and the username it used to login the victim's machine.
+In .ssh file inside home/l337h4x0r, we see the algorthm it use is "ecdsa-sha2-nistp256"
+So we go to the path /etc/ssh in victim's machine and find the private key file and the public key file.
+The password is the password we found in the last question.

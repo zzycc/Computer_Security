@@ -1,0 +1,2 @@
+Using frack and the dictionary we found, we can find the password with the command below:
+"fcrackzip -u -D -p ../../../etc/dictionaries-common/words password.zip"

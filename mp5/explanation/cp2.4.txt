@@ -1,0 +1,2 @@
+by looking at the file home/l337h4x0r/.purple/accounts.xml, we can get the password and thus enter the suspect's virtual machine.
+Then open the brouser and the history record, and we can find the websites.

@@ -1,0 +1,3 @@
+In .bash_history file, we found that the user deleted ta file called "evilplan.doc"
+Then we use the same method as the last question, we can know the deleted time and recover the file and thus know the weapon.
+

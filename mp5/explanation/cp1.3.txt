@@ -1,0 +1,2 @@
+Use command 'cd home/ladiesman461/.purple/logs/'
+Then we can see the history of conversation

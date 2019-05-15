@@ -1,0 +1,4 @@
+In cd var/log/, we can find "lastlog" and "syslog".
+From lastlog, we can see the attacker IP.
+From syslog, we can see the attack time from the firt log time of root.
+Then also in syslog, we can see the victime IP before the attacker time.

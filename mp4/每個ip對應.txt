@@ -1,0 +1,6 @@
+02:42:ac:76:00:61 10.4.22.40 web server
+02:42:ac:01:26:dd 10.4.22.34 dns server
+02:42:6f:40:2d:6e 10.4.22.1  gateway
+02:42:ac:64:e9:f8 10.4.22.173 client
+02:42:ac:9a:1b:8e 10.4.22.76 port scanner
+10.4.22.109 attacker 

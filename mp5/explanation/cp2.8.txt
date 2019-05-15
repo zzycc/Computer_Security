@@ -1,0 +1,4 @@
+Use fls command, we can find the inode of the file "suicide.doc".
+Then using this inode, we can use istat to find the deleted time.
+Then use the command string to find the location of the deleted file.
+finally, we use xxd to recover the file.

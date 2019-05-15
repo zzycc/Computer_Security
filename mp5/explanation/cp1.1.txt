@@ -1,0 +1,1 @@
+use command 'cd /home' and then we can find the user name

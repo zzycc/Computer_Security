@@ -1,0 +1,21 @@
+Addr:
+	.string "/bin/sh"
+.global _main
+.section .text
+
+_main:
+
+push	%ebp
+mov	%esp,%ebp
+
+mov $11,%eax
+mov Addr,%ebx
+mov $0, %ecx
+mov $0,%edx
+
+int $0x80
+
+
+
+leave
+ret
